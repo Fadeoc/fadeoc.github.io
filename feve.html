@@ -1,0 +1,44 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>A Fadeoc EVE Guide</title>
+		<style type = "text/css">
+			body{margin-left:5%; line-height:1.7;}
+			body,a{color:#FFFFFF;}
+		</style>
+		<script type = "text/javascript">
+			var links = document.getElementsByTagName("a");
+			for(var i=0;i<links.length;i++){
+				if(links[i].className == "popup"){
+					links[i].onclick = function(){
+						popUp(this.getAttribute("href"));
+						return false;
+					}
+				}
+			}
+
+			function showPic(picx){
+				var holdspace = document.getElementById("holdspace");
+				var pichref = picx.getAttribute("href");
+				holdspace.setAttribute("src",pichref);
+			}
+		</script>
+	</head>
+
+	<body background="Pics/Rhea_Confessor_1920x1200.jpg">
+
+		<h1>A Fadeoc PVE Guide (Tiamat)</h1>
+
+		<ol>
+			<li><a href="feve-pics/1-Rats Damage Dealt & Type To Resists.jpg" onclick = "showPic(this); return false;" title="damage type">Rats Damage Dealt & Type To Resists</a></li>
+			<li><a href="feve-pics/2-falloff.jpg" onclick = "showPic(this); return false;" title="damage type">Falloff</a></li>
+		</ol>
+
+		<img id="holdspace" src="" alt="">
+
+
+
+	</body>
+
+</html>
