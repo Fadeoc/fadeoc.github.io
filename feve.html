@@ -8,16 +8,6 @@
 			body,a{color:#FFFFFF;}
 		</style>
 		<script type = "text/javascript">
-			var links = document.getElementsByTagName("a");
-			for(var i=0;i<links.length;i++){
-				if(links[i].className == "popup"){
-					links[i].onclick = function(){
-						popUp(this.getAttribute("href"));
-						return false;
-					}
-				}
-			}
-
 			function showPic(picx){
 				var holdspace = document.getElementById("holdspace");
 				var pichref = picx.getAttribute("href");
@@ -31,7 +21,7 @@
 		<h1>A Fadeoc PVE Guide (Tiamat)</h1>
 
 		<ol>
-			<li><a href="feve-pics/Rats Damage Dealt Type To Resists.jpg"title="damage type">Rats Damage Dealt \& Type To Resists</a></li>
+			<li><a href="feve-pics/Rats Damage Dealt Type To Resists.jpg" onclick = "showPic(this); return false;" title="damage type">Rats Damage Dealt & Type To Resists</a></li>
 			<li><a href="feve-pics/Falloff.jpg" onclick = "showPic(this); return false;" title="damage type">Falloff</a></li>
 		</ol>
 
