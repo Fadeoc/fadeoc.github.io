@@ -1,6 +1,6 @@
 			body{margin:0; line-height:1.7;}
 			a{text-decoration:none;}
-			#firsec{background-color:#DCDCDC; width:100%; height:100px; padding-top:20px;}
+			#firsec{background-color:#DCDCDC; width:100%; height:95px; padding-top:5px;}
 			#firsec .pagetitle{margin-left:50px; color:#2F4F4F}
 			h1{margin-top:0;}
 			h4{color:#FFDA89;}
@@ -17,7 +17,7 @@
 			#thirdbodyinfo{position:relative; float:left; width:22%; margin-top:1.5em;}
 			#poem1 li{padding-left:3em; list-style-type:none; color:#FFDA89; line-height: 3;}
 			#navbar{margin-left:-2em; margin-right:1em;}
-			#navbarnav li{width:140px; list-style-type:none; display:block; border:1px solid #DCDCDC; line-height:2em; padding:0.5em; font-size:0.875em; text-align:center;}
+			#navbarnav li{width:120px; list-style-type:none; display:block; border:1px solid #DCDCDC; line-height:2em; padding:0.5em; font-size:0.875em; text-align:center;}
 			#navbarnav li.bordernone{border-bottom:0;}
 			#navbarnav a{color:#DCDCDC;}
 			#navbarnav li:hover, #navbarnav li:focus{font-weight:bold; background-color:#DCDCDC; color:#2F4F4F;}
