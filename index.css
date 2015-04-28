@@ -142,7 +142,7 @@ article .toobig{
 }
 
 #bannerwrapper{
-	width: 165px;
+	width: 180px;
 	height: 21px;
 	margin: 10px auto;
 }
@@ -166,7 +166,7 @@ article .toobig{
 }
 
 #spanright:hover a, #spanright:focus a{
-	color: DF4B3F;
+	color: red;
 }
 
 
