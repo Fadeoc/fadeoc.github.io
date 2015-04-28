@@ -1,32 +1,190 @@
-			body{margin:0; line-height:1.7;}
-			a{text-decoration:none;}
-			#firsec{background-color:#DCDCDC; width:100%; height:95px; padding-top:5px;}
-			#firsec .pagetitle{margin-left:50px; color:#2F4F4F}
-			h1{margin-top:0;}
-			h4{color:#FFDA89;}
-			h5.pagetitle{margin-top:-10px;}
-			#thirdbody{width:100%; color:#DCDCDC; background-color:#2F4F4F;}
-			#thirdbodymain{position:relative; float:left; width:78%; min-height:500px; z-index:50;}
-			#thirdbodymain h2{margin-top:1.5em;}
-			#thirdbodymain p{font-size:1em; text-indent:2em; text-align:justify; text-justify:ideographic; word-break:break-all;}
-			#thirdbodymain code{color:#FFC0CB;}
-			#thirdbodymain a{color:#DCDCDC;text-decoration:underline;}
-			#thirdbodymain img{display:block; margin:0 auto;}
-			#thirdbodymain .toobig{width:100%;}
-			#innertext{width:80%; margin:0 auto 0 50px;}
-			#thirdbodyinfo{position:relative; float:left; width:22%; margin-top:1.5em;}
-			#poem1 li{padding-left:3em; list-style-type:none; color:#FFDA89; line-height: 3;}
-			#navbar{margin-left:-2em; margin-right:1em;}
-			#navbarnav li{width:120px; list-style-type:none; display:block; border:1px solid #DCDCDC; line-height:2em; padding:0.5em; font-size:0.875em; text-align:center;}
-			#navbarnav li.bordernone{border-bottom:0;}
-			#navbarnav a{color:#DCDCDC;}
-			#navbarnav li:hover, #navbarnav li:focus{font-weight:bold; background-color:#DCDCDC; color:#2F4F4F;}
-			#signature{margin-left:1em; margin-right:3em; margin-top:3em;}
-			#signature p{width:180px; color:#DCDCDC; font-family:"KaiTi";}
-			.clear{clear:both;}
-			#banner{background-color:#DCDCDC; height:33px; padding-top:15px; padding-bottom:0; color:#2F4F4F;}
-			#banner h5{margin:0 auto 0 50px;}
-			#banner div{position:relative; float:left;}
-			#banner #email{position:relative; float:right; margin-right:3%; margin-top:-2px;}
-			#banner #email a{color:#2F4F4F;}
-			#banner #email:hover; #banner #email:focus{background-color:#2F4F4F; color:#DCDCDC;}
+*{
+	margin: 0;
+	padding: 0;
+	line-height: 1.6;
+}
+
+body{
+	background-color: #2F4F4F;
+	text-align: justify;
+	word-break: break-all;
+	color: #DCDCDC;
+}
+
+#wholewrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#headsec{
+	height: 120px;
+	border-bottom: #DCDCDC solid 1px;
+	text-align: center;
+}
+
+h1{
+	position: relative;
+	top: 15px;
+}
+
+h2{
+	margin-bottom: 12px;
+	text-align: center;
+}
+
+h4{
+	margin-bottom: 1rem;
+	text-indent: 2rem;
+	color: #FFDA89;
+}
+
+h5.pagetitle{
+	position: relative;
+	top: 30px;
+	font-size: 1rem;
+}
+
+#realcontent{
+	width: 100%;
+}
+
+#realcontentMain{
+	float: left;
+	width: 75%;
+}
+
+#innertext{
+	width: 90%;
+	margin: 0 auto;
+}
+
+article{
+	margin-top: 30px;
+	padding: 20px;
+	border: #DCDCDC solid 1px;
+}
+
+p{
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	text-indent: 2rem;
+}
+
+ul p{
+	text-indent: 0;
+}
+
+
+code{
+	color: #FFC0CB;
+}
+
+article a{
+	text-decoration: underline;
+}
+
+article img{
+	display: block;
+	margin: 0 auto;
+}
+
+article .toobig{
+	width: 100%;
+}
+
+#realcontentAside{
+	position: relative;
+	top: 30px;
+	width: 25%;
+	float: right;
+}
+
+#realcontentAside .fixed{
+	position: relative;
+	top: 30px;
+	width: 25%;
+	float: right;
+}
+
+#navbar li{
+	width: 50%;
+	list-style-type:none;
+	display:block;
+	margin: 0 auto;
+	border:1px solid #DCDCDC;
+	line-height:2rem;
+	padding:0.5rem;
+	font-size:0.875rem;
+	text-align:center;
+	-webkit-transition:background-color linear 0.4s;
+	-moz-transition:background-color linear 0.4s;
+	transition:background-color linear 0.4s;
+}
+
+#navbar a:hover, #navbar a:focus{
+	font-weight: bold;
+	color: #2F4F4F;
+}
+
+#navbar a:hover li, #navbar a:focus li{
+	background-color: #DCDCDC;
+}
+
+#navbar li.bordernone{
+	border-bottom: 0;
+}
+
+#banner{
+	width: 960px;
+	height: 40px;
+	margin: 10px auto 0 auto;
+	border-top: #DCDCDC solid 1px;
+}
+
+#bannerwrapper{
+	width: 165px;
+	height: 21px;
+	margin: 10px auto;
+}
+
+#bannerwrapper span{
+	display: inline-block;
+	height: 21px;
+}
+
+#bannerwrapper span img{
+	width: 30px;
+	height: 21px;
+}
+
+
+#spanright{
+	position: relative;
+	float: right;
+	bottom: 3px;
+	height: 19px;
+}
+
+#spanright:hover a, #spanright:focus a{
+	color: red;
+}
+
+
+.clearfix:after{
+	display: block;
+	height: 0;
+	content: " ";
+	visibility: hidden;
+	clear:both;
+}
+
+a{
+	text-decoration: none;
+	color: #DCDCDC;
+	-webkit-transition:color linear 0.4s;
+	-moz-transition:color linear 0.4s;
+	transition:color linear 0.4s;
+}
+
+/*Poem page*/
+#poem article li{padding-left:3rem; list-style-type:none; color:#FFDA89; line-height: 3;}
