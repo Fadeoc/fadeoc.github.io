@@ -70,13 +70,16 @@ p{
 	text-indent: 2rem;
 }
 
-ul p{
-	text-indent: 0;
-}
-
-
 code{
 	color: #FFC0CB;
+}
+
+ul.codeUl li{
+	text-indent: 2rem;
+}
+
+li{
+	list-style-type: none;
 }
 
 article a{
@@ -99,26 +102,29 @@ article .toobig{
 	float: right;
 }
 
-#realcontentAside .fixed{
-	position: relative;
+#navbar{
+	width: 130px;
+	margin: 0 auto;
+}
+
+#navbar.fixed{
+	position: fixed;
+	width: 130px;
 	top: 30px;
-	width: 25%;
-	float: right;
+	margin-left: 55px;
 }
 
 #navbar li{
-	width: 50%;
-	list-style-type:none;
-	display:block;
-	margin: 0 auto;
-	border:1px solid #DCDCDC;
-	line-height:2rem;
-	padding:0.5rem;
-	font-size:0.875rem;
-	text-align:center;
-	-webkit-transition:background-color linear 0.4s;
-	-moz-transition:background-color linear 0.4s;
-	transition:background-color linear 0.4s;
+	list-style-type: none;
+	display: block;
+	border: 1px solid #DCDCDC;
+	line-height: 2rem;
+	padding: 0.5rem;
+	font-size: 0.875rem;
+	text-align: center;
+	-webkit-transition: background-color linear 0.4s;
+	-moz-transition: background-color linear 0.4s;
+	transition: background-color linear 0.4s;
 }
 
 #navbar a:hover, #navbar a:focus{

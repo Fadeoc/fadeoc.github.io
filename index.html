@@ -8,6 +8,8 @@
 		<meta name="keywords" content="Fadeoc,html,css,诗歌,散文,评论,Code,刹那">
 		<link type="text/css" rel="stylesheet" href="index.css">
 		<link rel="shortcut icon" href="fcon.jpg" type="image/x-icon" />
+		<script src="addLoadEvent.js"></script>
+		<script src="all.js"></script>
 	</head>
 
 	<body>
@@ -26,15 +28,28 @@
 							<article id="article6">
 								<h2>随波逐流（6）——过去的自己</h2>
 								<p>我想人的感觉同样会随着实质能力的提升而不同，并非过去我所想像的那样只有文学和情感才能绽放出美。</p>
-								<p>之前仿佛看懂了《CSS Mastery》，写了这个博客的源码，经过了大概三天的调整，觉得无论结构还是布局上都无可厚非。然而现在看来又怎样呢？风格与颜色且不说吧，结构还算说得过去，布局就真的连自己都变得静默无语——我怎么能写出这么烂的 css来啊？</p>
+								<p>之前仿佛看懂了《CSS Mastery》，写了这个博客的源码，经过了大概三天的调整，觉得无论结构还是布局上都无可厚非。然而现在看来又怎样呢？风格与颜色且不说吧，结构还算说得过去，布局就真的连自己都变得静默无语——我怎么能写出这么烂的css来啊？</p>
 								<p>我已经不记得是什么时候写下的第一篇日志，那里面有一些简单的博客系统计划，如今已经有两项可以做的出来。</p>
-								<p>分割线，之前我一直用hr在做，我甚至还到知乎的分割线那里去拖动，看看是不是某种图片，我真的挺讨厌图片的，因为自己没有美术直觉。后来在模仿Google的顶部导航栏的红色focus标识时，恍然大悟，原来分割线和这个focus标识是一样的，只是个border-bottom ……</p>
+								<p>分割线，之前我一直用hr在做，我甚至还到知乎的分割线那里去拖动，看看是不是某种图片，我真的挺讨厌图片的，因为自己没有美术直觉。后来在模仿Google的顶部导航栏的红色focus标识时，恍然大悟，原来分割线和这个focus标识是一样的，只是个border-bottom……</p>
 								<p>近一个月学习了Fibonacci数列，源于知乎关于猴子摘香蕉的摘法问题，写出代码之后，在浏览器里运行的结果倒是正确，只不过消耗真的太大了。我就是不知足的，不仅想解决这个问题，还想知道为什么。恰在此时，Email收到了阮一峰博客的关于「尾调用」的订阅，这就是天时。于是顺路学习了call stack，以及tail recursion。</p>
 								<p>一位不算朋友的朋友，询问我关于Javascript滑动条的事情，我是不会的，于是当着自己的问题去看了slide，突然看到了轮播slide，于是学习了array.prototype.forEach.call的每一个细节，虽然看起来步伐很小，但实际上受益良多。</p>
 								<p>有了slide的经验，豁然开朗，想象着固定的侧边栏其实就是一个计算距离的函数而已。看了下别的代码的实现过程，复杂的很多，大部分用了JQuery，我还是比较喜欢简短的原生，目前正在着手。</p>
 								<p>过去的自己有着过去的感觉，现在的自己有着现在的优势，每进一步，都更近的走向纯粹的网页。之前使用了margin和padding的混杂定位，现在看来真的很可笑。还有混乱的css，如今也一并整理了吧。</p>
-
+								<p>写fixed sidebar最先遇到的问题是代码失效，怎么也无法替换目标元素的class。百般无奈，打开了Firefox，竟然好使，显然是webkit的问题。随便Google了下document.documentElement.scrollTop fail in chrome，得知chrome的接口是document.body.scrollTop。接下来很简单：</p>
+								<p><code> var x = (document.documentElement.scrollTop) ? document.documentElement.scrollTop : document.body.scrollTop</code></p>
+								<p>然后是fixed之后的固定位置，看了豆瓣和知乎的源码，并未看出个所以然，猜测是以与窗口的绝对距离判断的，可是窗口的绝对宽度是随时变化的……从下午想到晚上，晚饭的时候也在想。</p>
+								<p>对了！</p>
+								<p>虽然fixed之后是相对于窗口变化的，但可以相对左边的元素设置一个固定margin。</p>
+								<ul class = "codeUl">
+									<li><code>position: fixed;</code></li>
+									<li><code>width: 130px;</code></li>
+									<li><code>top: 30px;</code></li>
+									<li><code>margin-left: 55px;</code></li>
+								</ul>
+								<br/>
+								<p>Rofl:)</p>
 							</article>
+
 							<article id="article5">
 								<h2>随波逐流（5）——何时触底</h2>
 								
@@ -203,7 +218,7 @@
 					</div>
 				</div>
 
-				<div id="realcontentAside">
+				<div id="realcontentAside" class="clearfix">
 						<nav id="navbar">
 							<ul>
 								<a href="index.html"><li class="bordernone">日志</li></a>
@@ -214,7 +229,6 @@
 							</ul>
 						</nav>
 				</div>
-
 			</div>
 
 			<div id="banner">
