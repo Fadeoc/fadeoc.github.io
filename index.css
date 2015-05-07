@@ -105,6 +105,9 @@ article .toobig{
 #navbar{
 	width: 130px;
 	margin: 0 auto;
+	-webkit-transition: opacity 0.4s ease-in-out;
+	-moz-transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.4s ease-in-out;
 }
 
 #navbar.fixed{
@@ -138,6 +141,32 @@ article .toobig{
 
 #navbar li.bordernone{
 	border-bottom: 0;
+}
+
+#toTop{
+	position: fixed;
+	height: 50px;
+	bottom: 50px;
+	margin-left: 95px;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+#toTop:hover{
+	position: fixed;
+	height: 50px;
+	bottom: 50px;
+	margin-left: 95px;
+	visibility: hidden;
+	pointer-events: none;
+	cursor: pointer;
+}
+
+#toTop img{
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
 }
 
 #banner{
