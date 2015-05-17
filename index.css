@@ -58,6 +58,67 @@ h5.pagetitle{
 	margin: 0 auto;
 }
 
+#slideContainer{
+	position: relative;
+	width: 999999px;
+	height: 520px;
+	margin-top: 30px;
+}
+
+#slidemask{
+	position: relative;
+	overflow: hidden;
+	width: 648px;
+	height: 500px;
+}
+
+#imgKsanaPre{
+	position: absolute;
+	float: left;
+	top: 50%;
+	margin-top: -15px;
+	height: 30px;
+	z-index: 5;
+}
+
+#imgKsanaNext{
+	position: absolute;
+	float: left;
+	top: 50%;
+	left: 598px;
+	margin-top: -15px;
+	height: 30px;
+	z-index: 5;
+}
+
+#slidemask a img{
+	display: block;
+	width: 50px;
+	opacity: 0.2;
+}
+
+#slidemask a img:hover{
+	opacity: 0.8;
+}
+
+#slidemask .slides{
+	position: absolute;
+	top: 0;
+	width: 648px;
+	height: 100%;
+}
+
+#slidemask img{
+	position: absolute;
+	display: block;
+	margin: auto;
+	width: 648px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 article{
 	margin-top: 30px;
 	padding: 20px;
@@ -105,9 +166,6 @@ article .toobig{
 #navbar{
 	width: 130px;
 	margin: 0 auto;
-	-webkit-transition: opacity 0.4s ease-in-out;
-	-moz-transition: opacity 0.4s ease-in-out;
-	transition: opacity 0.4s ease-in-out;
 }
 
 #navbar.fixed{
@@ -153,12 +211,6 @@ article .toobig{
 }
 
 #toTop:hover{
-	position: fixed;
-	height: 50px;
-	bottom: 50px;
-	margin-left: 95px;
-	visibility: hidden;
-	pointer-events: none;
 	cursor: pointer;
 }
 
