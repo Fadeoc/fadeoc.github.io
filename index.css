@@ -179,8 +179,7 @@ article .toobig{
 	list-style-type: none;
 	display: block;
 	border: 1px solid #DCDCDC;
-	line-height: 2rem;
-	padding: 0.5rem;
+	padding: 13px;
 	font-size: 0.875rem;
 	text-align: center;
 	-webkit-transition: background-color linear 0.4s;
