@@ -1,0 +1,312 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1468485671'); /* IE9*/
+  src: url('iconfont.eot?t=1468485671#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1468485671') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1468485671') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1468485671#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:20px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before { content: "\e650"; }
+.icon-github:before { content: "\e66c"; }
+.icon-wechat:before { content: "\e64b"; }
+.icon-icon07:before { content: "\e606"; }
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #dcecfc;
+}
+
+.list-style-inside{
+	list-style-position: inside;
+}
+
+.clear{
+	clear: both;
+}
+
+
+#container{
+	overflow: hidden;
+	min-width: 700px;
+	max-width: 900px;
+}
+
+#aside, #main{
+	float: left;
+	margin-bottom: -3000px;
+	padding-bottom: 3000px;
+}
+
+#aside{
+	box-sizing: border-box;
+	padding-top: 30px;
+	width: 28%;
+	min-height: 100%;
+	background-color: #2F4F4F;
+	color: #ebf5ff;
+}
+
+#aside-content{
+	box-sizing: border-box;
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	height: 100%;
+	min-height: 870px;
+}
+
+#personal-info{
+	border-bottom: 1px solid #ebf5ff;
+}
+
+#portrait{
+	margin: 0 auto;
+	width: 80%;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#portrait-image{
+	display: block;
+	width: 100%;
+}
+
+#name{
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#title-applied{
+	border-bottom: 1px solid #ebf5ff;
+}
+
+.title-applied-word, #title-applied-title{
+	padding-top: 5px;
+	text-align: center;
+}
+
+.title-applied-word{
+	font-size: 12px;
+}
+
+#title-applied-title{
+	padding-bottom: 5px;
+}
+
+#skills{
+	padding-top: 10px;
+}
+
+.skills-skill{
+	margin-top: 10px;
+	height: 14px;
+}
+
+.skills-skill-name, .skills-skill-bar{
+	float: left;
+}
+
+.skills-skill-name{
+	margin-right: 5%;
+	width: 35%;
+	text-align: right;
+	line-height: 14px;
+	font-size: 11px;
+}
+
+.skills-skill-bar{
+	position: relative;
+	width: 55%;
+	height: 100%;
+	border-radius: 7px;
+	background-color: #99b286;
+}
+
+.skills-skill-status{
+	float: left;
+	height: 100%;
+	border-radius: 7px 0 0 7px;
+	background-color: #ebf5ff;
+}
+
+#skills-skill-status-html{
+	width: 85%;
+}
+
+#skills-skill-status-css{
+	width: 75%;
+}
+
+#skills-skill-status-js{
+	width: 65%;
+}
+
+#skills-skill-status-jq{
+	width: 50%;
+}
+
+#skills-skill-status-ng{
+	width: 45%;
+}
+
+#skills-skill-status-bootstrap{
+	width: 50%;
+}
+
+#skills-skill-status-less{
+	width: 75%;
+}
+
+#skills-skill-status-git{
+	width: 70%;
+}
+
+#skills-skill-status-github{
+	width: 65%;
+}
+
+#skills-skill-status-bower{
+	width: 35%;
+}
+
+#skills-skill-status-python{
+	width: 65%;
+}
+
+#skills-skill-status-php{
+	width: 45%;
+}
+
+#bio{
+	margin: 20px auto;
+	width: 95%;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+#relative-links{
+	position: absolute;
+	bottom: 30px;
+	left: 2%;
+	width: 96%;
+}
+
+.relative-link{
+	margin-top: 10px;
+	height: 20px;
+}
+
+.relative-link-icon, .relative-link-text{
+	float: left;
+	height: 20px;
+}
+
+.relative-link-icon{
+	width: 20px;
+}
+
+.relative-link-text{
+	box-sizing: border-box;
+	margin-left: 5px;
+	padding-top: 4px;
+	font-size: 12px;
+}
+
+.relative-link-url{
+	color: #ebf5ff;
+}
+
+
+#main{
+	box-sizing: border-box;
+	padding-left:18px;
+	padding-right:18px;
+	width: 72%;
+}
+
+.exps-block{
+	margin-top: 40px;
+}
+
+.exps-block:first-child{
+	margin-top: 0;
+}
+
+.exps-title{
+	font-size: 20px;
+}
+
+.exp{
+	position: relative;
+	margin-top: 15px;
+}
+
+.exp-title{
+	font-size: 18px;
+	color: #8a8a5c;
+}
+
+.exp-tags{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.exp-tag{
+	box-sizing: border-box;
+	float: left;
+	margin-left: 5px;
+	padding: 2px 5px;
+	background-color: #8a8a5c;
+}
+
+.exp-tag:first-child{
+	margin-left: 0;
+}
+
+.exp-describtion{
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+#other-project-lists{
+	box-sizing: border-box;
+	padding-left: 40px;
+}
+
+.other-project-list{
+	margin-top: 5px;
+}
+
+
+.job-exp-corp{
+	margin-top: 15px;
+}
+
+.job-exp-details, .job-exp-duties{
+	box-sizing: border-box;
+	padding-left: 40px;
+}
+
+.job-exp-detail, .job-exp-duty{
+	margin-top: 5px;
+	font-size: 14px;
+}
